@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "name": "主页",
+    "url": "/default/home",
+    "icon": "Home.png"
+  },
+
+  {
+    "id": "1",
+    "name": "资产管理",
+     "url": "/default/assets",
+    "icon": "Asset-Management.png"
+  },
+
+  {
+    "id": "2",
+    "name": "能源管理",
+    "icon": "energy-efficiency.png",
+    "showChildren": false,
+    "children": [
+      {
+        "id": "20",
+        "name": "能耗",
+        "url": "/default/energy/consumption-analysis",
+        "icon": "fa-home"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "数据看板",
+    "icon": "pie-chart.png"
+  },
+  {
+    "id": "4",
+    "name": "任务管理",
+    "icon": "Document-management.png"
+  },
+  {
+    "id": "5",
+    "name": "报警事件",
+    "icon": "report.png"
+  },
+  {
+    "id": "6",
+    "name": "电能质量",
+    "icon": "diannengzhiliang.png"
+  },
+  {
+    "id": "7",
+    "name": "工单管理",
+    "icon": "chanpin.png"
+  },
+  {
+    "id": "8",
+    "name": "报告报表",
+    "icon": "icon-.png"
+  }
+]
+
