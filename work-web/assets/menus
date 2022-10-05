@@ -9,7 +9,7 @@
   {
     "id": "1",
     "name": "资产管理",
-     "url": "/default/assets",
+    "url": "/default/assets",
     "icon": "Asset-Management.png"
   },
 
@@ -17,45 +17,41 @@
     "id": "2",
     "name": "能源管理",
     "icon": "energy-efficiency.png",
-    "showChildren": false,
-    "children": [
-      {
-        "id": "20",
-        "name": "能耗",
-        "url": "/default/energy/consumption-analysis",
-        "icon": "fa-home"
-      }
-    ]
+    "url": "/default/energy"
+  },
+ {
+    "id": "6",
+    "name": "数据分析",
+    "icon": "diannengzhiliang.png"
   },
   {
     "id": "3",
     "name": "数据看板",
-    "icon": "pie-chart.png"
-  },
-  {
-    "id": "4",
-    "name": "任务管理",
-    "icon": "Document-management.png"
-  },
-  {
-    "id": "5",
-    "name": "报警事件",
-    "icon": "report.png"
-  },
-  {
-    "id": "6",
-    "name": "电能质量",
-    "icon": "diannengzhiliang.png"
+    "icon": "pie-chart.png",
+    "url": "/default/data-board"
   },
   {
     "id": "7",
-    "name": "工单管理",
-    "icon": "chanpin.png"
+    "name": "运维管理",
+    "icon": "chanpin.png",
+    "url": "/default/ticket"
+  },
+  {
+      "id": "5",
+      "name": "报警中心",
+      "icon": "report.png",
+      "url": "/default/alarm"
   },
   {
     "id": "8",
     "name": "报告报表",
-    "icon": "icon-.png"
+    "icon": "icon-.png",
+    "url": "/default/report"
+  },
+  {
+    "id": "4",
+    "name": "文档管理",
+    "icon": "Document-management.png"
   }
 ]
 
