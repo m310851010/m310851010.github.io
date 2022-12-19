@@ -1,3 +1,7 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 [class^=ant-]::-ms-clear,
 [class*= ant-]::-ms-clear,
 [class^=ant-] input::-ms-clear,
@@ -1229,10 +1233,6 @@ html {
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 .cdk-overlay-container {
   pointer-events: none;
   top: 0;
@@ -1394,11 +1394,11 @@ nz-affix {
   color: #52c41a;
 }
 .ant-alert-info {
-  background-color: #e6f7ff;
-  border: 1px solid #91d5ff;
+  background-color: #e6ffff;
+  border: 1px solid #87f7ff;
 }
 .ant-alert-info .ant-alert-icon {
-  color: #1890ff;
+  color: #0dcaf0;
 }
 .ant-alert-warning {
   background-color: #fffbe6;
@@ -3665,6 +3665,42 @@ a.ant-btn-icon-only > .anticon {
   position: relative;
   display: inline-flex;
 }
+.ant-btn-rtl.ant-btn-group .ant-btn + .ant-btn,
+.ant-btn-rtl.ant-btn + .ant-btn-group,
+.ant-btn-rtl.ant-btn-group span + .ant-btn,
+.ant-btn-rtl.ant-btn-group .ant-btn + span,
+.ant-btn-rtl.ant-btn-group > span + span,
+.ant-btn-rtl.ant-btn-group + .ant-btn,
+.ant-btn-rtl.ant-btn-group + .ant-btn-group,
+.ant-btn-group-rtl.ant-btn-group .ant-btn + .ant-btn,
+.ant-btn-group-rtl.ant-btn + .ant-btn-group,
+.ant-btn-group-rtl.ant-btn-group span + .ant-btn,
+.ant-btn-group-rtl.ant-btn-group .ant-btn + span,
+.ant-btn-group-rtl.ant-btn-group > span + span,
+.ant-btn-group-rtl.ant-btn-group + .ant-btn,
+.ant-btn-group-rtl.ant-btn-group + .ant-btn-group {
+  margin-right: -1px;
+  margin-left: auto;
+}
+.ant-btn-group.ant-btn-group-rtl {
+  direction: rtl;
+}
+.ant-btn-group-rtl.ant-btn-group > .ant-btn:first-child:not(:last-child),
+.ant-btn-group-rtl.ant-btn-group > span:first-child:not(:last-child) > .ant-btn {
+  border-radius: 0 2px 2px 0;
+}
+.ant-btn-group-rtl.ant-btn-group > .ant-btn:last-child:not(:first-child),
+.ant-btn-group-rtl.ant-btn-group > span:last-child:not(:first-child) > .ant-btn {
+  border-radius: 2px 0 0 2px;
+}
+.ant-btn-group-rtl.ant-btn-group-sm > .ant-btn:first-child:not(:last-child),
+.ant-btn-group-rtl.ant-btn-group-sm > span:first-child:not(:last-child) > .ant-btn {
+  border-radius: 0 2px 2px 0;
+}
+.ant-btn-group-rtl.ant-btn-group-sm > .ant-btn:last-child:not(:first-child),
+.ant-btn-group-rtl.ant-btn-group-sm > span:last-child:not(:first-child) > .ant-btn {
+  border-radius: 2px 0 0 2px;
+}
 .ant-btn-group > .ant-btn,
 .ant-btn-group > span > .ant-btn {
   position: relative;
@@ -3750,42 +3786,6 @@ a.ant-btn-icon-only > .anticon {
   padding-left: 8px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.ant-btn-rtl.ant-btn-group .ant-btn + .ant-btn,
-.ant-btn-rtl.ant-btn + .ant-btn-group,
-.ant-btn-rtl.ant-btn-group span + .ant-btn,
-.ant-btn-rtl.ant-btn-group .ant-btn + span,
-.ant-btn-rtl.ant-btn-group > span + span,
-.ant-btn-rtl.ant-btn-group + .ant-btn,
-.ant-btn-rtl.ant-btn-group + .ant-btn-group,
-.ant-btn-group-rtl.ant-btn-group .ant-btn + .ant-btn,
-.ant-btn-group-rtl.ant-btn + .ant-btn-group,
-.ant-btn-group-rtl.ant-btn-group span + .ant-btn,
-.ant-btn-group-rtl.ant-btn-group .ant-btn + span,
-.ant-btn-group-rtl.ant-btn-group > span + span,
-.ant-btn-group-rtl.ant-btn-group + .ant-btn,
-.ant-btn-group-rtl.ant-btn-group + .ant-btn-group {
-  margin-right: -1px;
-  margin-left: auto;
-}
-.ant-btn-group.ant-btn-group-rtl {
-  direction: rtl;
-}
-.ant-btn-group-rtl.ant-btn-group > .ant-btn:first-child:not(:last-child),
-.ant-btn-group-rtl.ant-btn-group > span:first-child:not(:last-child) > .ant-btn {
-  border-radius: 0 2px 2px 0;
-}
-.ant-btn-group-rtl.ant-btn-group > .ant-btn:last-child:not(:first-child),
-.ant-btn-group-rtl.ant-btn-group > span:last-child:not(:first-child) > .ant-btn {
-  border-radius: 2px 0 0 2px;
-}
-.ant-btn-group-rtl.ant-btn-group-sm > .ant-btn:first-child:not(:last-child),
-.ant-btn-group-rtl.ant-btn-group-sm > span:first-child:not(:last-child) > .ant-btn {
-  border-radius: 0 2px 2px 0;
-}
-.ant-btn-group-rtl.ant-btn-group-sm > .ant-btn:last-child:not(:first-child),
-.ant-btn-group-rtl.ant-btn-group-sm > span:last-child:not(:first-child) > .ant-btn {
-  border-radius: 2px 0 0 2px;
 }
 .ant-btn:focus > span,
 .ant-btn:active > span {
@@ -16612,7 +16612,7 @@ textarea.ant-mentions {
 }
 .ant-message-info .anticon,
 .ant-message-loading .anticon {
-  color: #1890ff;
+  color: #0dcaf0;
 }
 .ant-message .anticon {
   position: relative;
@@ -16861,7 +16861,7 @@ textarea.ant-mentions {
   color: #faad14;
 }
 .ant-modal-confirm-info .ant-modal-confirm-body > .anticon {
-  color: #1890ff;
+  color: #0dcaf0;
 }
 .ant-modal-confirm-success .ant-modal-confirm-body > .anticon {
   color: #52c41a;
@@ -16989,7 +16989,7 @@ textarea.ant-mentions {
   color: #52c41a;
 }
 .anticon.ant-notification-notice-icon-info {
-  color: #1890ff;
+  color: #0dcaf0;
 }
 .anticon.ant-notification-notice-icon-warning {
   color: #faad14;
@@ -23023,9 +23023,9 @@ nz-tabs-nav {
   border-color: #b7eb8f;
 }
 .ant-tag-processing {
-  color: #1890ff;
-  background: #e6f7ff;
-  border-color: #91d5ff;
+  color: #0dcaf0;
+  background: #e6ffff;
+  border-color: #87f7ff;
 }
 .ant-tag-error {
   color: #ff4d4f;
@@ -26353,7 +26353,7 @@ nz-tree {
   color: #ff4d4f;
 }
 .ant-result-info .ant-result-icon > .anticon {
-  color: #1890ff;
+  color: #0dcaf0;
 }
 .ant-result-warning .ant-result-icon > .anticon {
   color: #faad14;
@@ -26716,6 +26716,39 @@ nz-space-item {
 .nzx-page-header .header-content-wrapper {
   padding-left: 10px;
 }
+.ant-table.ant-table-mini {
+  font-size: 14px;
+}
+.ant-table.ant-table-mini .ant-table-title,
+.ant-table.ant-table-mini .ant-table-footer,
+.ant-table.ant-table-mini .ant-table-thead > tr > th,
+.ant-table.ant-table-mini .ant-table-tbody > tr > td,
+.ant-table.ant-table-mini tfoot > tr > th,
+.ant-table.ant-table-mini tfoot > tr > td {
+  padding: 4px 4px;
+}
+.ant-table.ant-table-mini .ant-table-filter-trigger {
+  margin-right: -2px;
+}
+.ant-table.ant-table-mini .ant-table-expanded-row-fixed {
+  margin: -4px -4px;
+}
+.ant-table.ant-table-mini .ant-table-tbody .ant-table-wrapper:only-child .ant-table {
+  margin: -4px -4px -4px 21px;
+}
+.ant-table.ant-table-mini .ant-table-selection-column {
+  padding-inline-start: 1px;
+}
+.ant-table-mini .ant-table-thead > tr > th {
+  background-color: #fafafa;
+}
+.ant-table-mini .ant-table-selection-column {
+  width: 46px;
+  min-width: 46px;
+}
+.nzx-table-striped-tbody > tr:nth-of-type(even) > td {
+  background: #fafafa;
+}
 .nzx-table .ant-table-column-title {
   position: initial;
 }
@@ -26740,13 +26773,13 @@ nz-space-item {
 }
 .nzx-table__title {
   display: flex;
+  flex: 1;
   align-items: center;
 }
 .nzx-table__title > * {
   margin-right: 8px;
 }
 .nzx-table__toolbar {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -26825,26 +26858,3357 @@ nz-space-item {
   font-size: 16px;
   cursor: move;
 }
+.nzx-button-success {
+  color: #fff;
+  border-color: #52c41a;
+  background: #52c41a;
+}
+.nzx-button-success > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success:hover {
+  color: #ffffff;
+  border-color: #75d048;
+  background: #75d048;
+}
+.nzx-button-success:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success:active,
+.nzx-button-success.active,
+.nzx-button-success:focus,
+.nzx-button-success.focus {
+  color: #f2f2f2;
+  border-color: #4eba19;
+  background: #4eba19;
+}
+.nzx-button-success:active > a:only-child,
+.nzx-button-success.active > a:only-child,
+.nzx-button-success:focus > a:only-child,
+.nzx-button-success.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success:active > a:only-child::after,
+.nzx-button-success.active > a:only-child::after,
+.nzx-button-success:focus > a:only-child::after,
+.nzx-button-success.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success[disabled],
+.nzx-button-success[disabled]:hover,
+.nzx-button-success[disabled]:focus,
+.nzx-button-success[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-success[disabled] > a:only-child,
+.nzx-button-success[disabled]:hover > a:only-child,
+.nzx-button-success[disabled]:focus > a:only-child,
+.nzx-button-success[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success[disabled] > a:only-child::after,
+.nzx-button-success[disabled]:hover > a:only-child::after,
+.nzx-button-success[disabled]:focus > a:only-child::after,
+.nzx-button-success[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success:hover,
+.nzx-button-success:active,
+.nzx-button-success.active,
+.nzx-button-success:focus,
+.nzx-button-success.focus {
+  color: #fff;
+}
+.nzx-button-success:focus,
+.nzx-button-success.focus {
+  box-shadow: 0 0 0 2px rgba(82, 196, 26, 0.2);
+}
+.nzx-button-success.ant-btn-text {
+  color: #52c41a;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text:hover,
+.nzx-button-success.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-text:hover > a:only-child,
+.nzx-button-success.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text:hover > a:only-child::after,
+.nzx-button-success.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text[disabled],
+.nzx-button-success.ant-btn-text[disabled]:hover,
+.nzx-button-success.ant-btn-text[disabled]:focus,
+.nzx-button-success.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-text[disabled] > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text:hover,
+.nzx-button-success.ant-btn-text:focus {
+  color: #73d13d;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-success.ant-btn-text:hover > a:only-child,
+.nzx-button-success.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text:hover > a:only-child::after,
+.nzx-button-success.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text:active {
+  color: #389e0d;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-success.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-text[disabled],
+.nzx-button-success.ant-btn-text[disabled]:hover,
+.nzx-button-success.ant-btn-text[disabled]:focus,
+.nzx-button-success.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-text[disabled] > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-success.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-success.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link {
+  color: #52c41a;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link:hover,
+.nzx-button-success.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-link:hover > a:only-child,
+.nzx-button-success.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link:hover > a:only-child::after,
+.nzx-button-success.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link[disabled],
+.nzx-button-success.ant-btn-link[disabled]:hover,
+.nzx-button-success.ant-btn-link[disabled]:focus,
+.nzx-button-success.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-link[disabled] > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link:hover,
+.nzx-button-success.ant-btn-link:focus {
+  color: #73d13d;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-link:hover > a:only-child,
+.nzx-button-success.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link:hover > a:only-child::after,
+.nzx-button-success.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link:active {
+  color: #389e0d;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-success.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-success.ant-btn-link[disabled],
+.nzx-button-success.ant-btn-link[disabled]:hover,
+.nzx-button-success.ant-btn-link[disabled]:focus,
+.nzx-button-success.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-success.ant-btn-link[disabled] > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-success.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-success.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-success.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-success {
+  color: #52c41a;
+  border-color: #52c41a;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-success > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-success > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-success:hover,
+.ant-btn-background-ghost.nzx-button-success:focus {
+  color: #73d13d;
+  border-color: #73d13d;
+}
+.ant-btn-background-ghost.nzx-button-success:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-success:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-success:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-success:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-success:active {
+  color: #389e0d;
+  border-color: #389e0d;
+}
+.ant-btn-background-ghost.nzx-button-success:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-success:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-success[disabled],
+.ant-btn-background-ghost.nzx-button-success[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-success[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-success[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-success[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-success[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-success[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-success[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-success[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-success[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-success[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-success[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning {
+  color: #fff;
+  border-color: #faad14;
+  background: #faad14;
+}
+.nzx-button-warning > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning:hover {
+  color: #ffffff;
+  border-color: #fbbd43;
+  background: #fbbd43;
+}
+.nzx-button-warning:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning:active,
+.nzx-button-warning.active,
+.nzx-button-warning:focus,
+.nzx-button-warning.focus {
+  color: #f2f2f2;
+  border-color: #eea413;
+  background: #eea413;
+}
+.nzx-button-warning:active > a:only-child,
+.nzx-button-warning.active > a:only-child,
+.nzx-button-warning:focus > a:only-child,
+.nzx-button-warning.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning:active > a:only-child::after,
+.nzx-button-warning.active > a:only-child::after,
+.nzx-button-warning:focus > a:only-child::after,
+.nzx-button-warning.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning[disabled],
+.nzx-button-warning[disabled]:hover,
+.nzx-button-warning[disabled]:focus,
+.nzx-button-warning[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-warning[disabled] > a:only-child,
+.nzx-button-warning[disabled]:hover > a:only-child,
+.nzx-button-warning[disabled]:focus > a:only-child,
+.nzx-button-warning[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning[disabled] > a:only-child::after,
+.nzx-button-warning[disabled]:hover > a:only-child::after,
+.nzx-button-warning[disabled]:focus > a:only-child::after,
+.nzx-button-warning[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning:hover,
+.nzx-button-warning:active,
+.nzx-button-warning.active,
+.nzx-button-warning:focus,
+.nzx-button-warning.focus {
+  color: #fff;
+}
+.nzx-button-warning:focus,
+.nzx-button-warning.focus {
+  box-shadow: 0 0 0 2px rgba(250, 173, 20, 0.2);
+}
+.nzx-button-warning.ant-btn-text {
+  color: #faad14;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text:hover,
+.nzx-button-warning.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-text:hover > a:only-child,
+.nzx-button-warning.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text[disabled],
+.nzx-button-warning.ant-btn-text[disabled]:hover,
+.nzx-button-warning.ant-btn-text[disabled]:focus,
+.nzx-button-warning.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-text[disabled] > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text:hover,
+.nzx-button-warning.ant-btn-text:focus {
+  color: #ffc53d;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-warning.ant-btn-text:hover > a:only-child,
+.nzx-button-warning.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text:active {
+  color: #d48806;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-warning.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-text[disabled],
+.nzx-button-warning.ant-btn-text[disabled]:hover,
+.nzx-button-warning.ant-btn-text[disabled]:focus,
+.nzx-button-warning.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-text[disabled] > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-warning.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-warning.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link {
+  color: #faad14;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link:hover,
+.nzx-button-warning.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-link:hover > a:only-child,
+.nzx-button-warning.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link[disabled],
+.nzx-button-warning.ant-btn-link[disabled]:hover,
+.nzx-button-warning.ant-btn-link[disabled]:focus,
+.nzx-button-warning.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-link[disabled] > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link:hover,
+.nzx-button-warning.ant-btn-link:focus {
+  color: #ffc53d;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-link:hover > a:only-child,
+.nzx-button-warning.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link:active {
+  color: #d48806;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-warning.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-warning.ant-btn-link[disabled],
+.nzx-button-warning.ant-btn-link[disabled]:hover,
+.nzx-button-warning.ant-btn-link[disabled]:focus,
+.nzx-button-warning.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-warning.ant-btn-link[disabled] > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-warning.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-warning.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-warning.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-warning {
+  color: #faad14;
+  border-color: #faad14;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-warning > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-warning > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-warning:hover,
+.ant-btn-background-ghost.nzx-button-warning:focus {
+  color: #ffc53d;
+  border-color: #ffc53d;
+}
+.ant-btn-background-ghost.nzx-button-warning:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-warning:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-warning:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-warning:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-warning:active {
+  color: #d48806;
+  border-color: #d48806;
+}
+.ant-btn-background-ghost.nzx-button-warning:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-warning:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-warning[disabled],
+.ant-btn-background-ghost.nzx-button-warning[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-warning[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-warning[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-warning[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error {
+  color: #fff;
+  border-color: #ff4d4f;
+  background: #ff4d4f;
+}
+.nzx-button-error > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error:hover {
+  color: #ffffff;
+  border-color: #ff7172;
+  background: #ff7172;
+}
+.nzx-button-error:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error:active,
+.nzx-button-error.active,
+.nzx-button-error:focus,
+.nzx-button-error.focus {
+  color: #f2f2f2;
+  border-color: #f2494b;
+  background: #f2494b;
+}
+.nzx-button-error:active > a:only-child,
+.nzx-button-error.active > a:only-child,
+.nzx-button-error:focus > a:only-child,
+.nzx-button-error.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error:active > a:only-child::after,
+.nzx-button-error.active > a:only-child::after,
+.nzx-button-error:focus > a:only-child::after,
+.nzx-button-error.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error[disabled],
+.nzx-button-error[disabled]:hover,
+.nzx-button-error[disabled]:focus,
+.nzx-button-error[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-error[disabled] > a:only-child,
+.nzx-button-error[disabled]:hover > a:only-child,
+.nzx-button-error[disabled]:focus > a:only-child,
+.nzx-button-error[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error[disabled] > a:only-child::after,
+.nzx-button-error[disabled]:hover > a:only-child::after,
+.nzx-button-error[disabled]:focus > a:only-child::after,
+.nzx-button-error[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error:hover,
+.nzx-button-error:active,
+.nzx-button-error.active,
+.nzx-button-error:focus,
+.nzx-button-error.focus {
+  color: #fff;
+}
+.nzx-button-error:focus,
+.nzx-button-error.focus {
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+.nzx-button-error.ant-btn-text {
+  color: #ff4d4f;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text:hover,
+.nzx-button-error.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-text:hover > a:only-child,
+.nzx-button-error.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text:hover > a:only-child::after,
+.nzx-button-error.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text[disabled],
+.nzx-button-error.ant-btn-text[disabled]:hover,
+.nzx-button-error.ant-btn-text[disabled]:focus,
+.nzx-button-error.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-text[disabled] > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text:hover,
+.nzx-button-error.ant-btn-text:focus {
+  color: #ff7875;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-error.ant-btn-text:hover > a:only-child,
+.nzx-button-error.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text:hover > a:only-child::after,
+.nzx-button-error.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text:active {
+  color: #d9363e;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-error.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-text[disabled],
+.nzx-button-error.ant-btn-text[disabled]:hover,
+.nzx-button-error.ant-btn-text[disabled]:focus,
+.nzx-button-error.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-text[disabled] > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-error.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-error.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link {
+  color: #ff4d4f;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link:hover,
+.nzx-button-error.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-link:hover > a:only-child,
+.nzx-button-error.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link:hover > a:only-child::after,
+.nzx-button-error.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link[disabled],
+.nzx-button-error.ant-btn-link[disabled]:hover,
+.nzx-button-error.ant-btn-link[disabled]:focus,
+.nzx-button-error.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-link[disabled] > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link:hover,
+.nzx-button-error.ant-btn-link:focus {
+  color: #ff7875;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-link:hover > a:only-child,
+.nzx-button-error.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link:hover > a:only-child::after,
+.nzx-button-error.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link:active {
+  color: #d9363e;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-error.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-error.ant-btn-link[disabled],
+.nzx-button-error.ant-btn-link[disabled]:hover,
+.nzx-button-error.ant-btn-link[disabled]:focus,
+.nzx-button-error.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-error.ant-btn-link[disabled] > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-error.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-error.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-error.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-error {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-error > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-error > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-error:hover,
+.ant-btn-background-ghost.nzx-button-error:focus {
+  color: #ff7875;
+  border-color: #ff7875;
+}
+.ant-btn-background-ghost.nzx-button-error:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-error:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-error:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-error:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-error:active {
+  color: #d9363e;
+  border-color: #d9363e;
+}
+.ant-btn-background-ghost.nzx-button-error:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-error:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-error[disabled],
+.ant-btn-background-ghost.nzx-button-error[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-error[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-error[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-error[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-error[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-error[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-error[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-error[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-error[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-error[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-error[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info {
+  color: #fff;
+  border-color: #0dcaf0;
+  background: #0dcaf0;
+}
+.nzx-button-info > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info:hover {
+  color: #ffffff;
+  border-color: #3dd5f3;
+  background: #3dd5f3;
+}
+.nzx-button-info:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info:active,
+.nzx-button-info.active,
+.nzx-button-info:focus,
+.nzx-button-info.focus {
+  color: #f2f2f2;
+  border-color: #0cc0e4;
+  background: #0cc0e4;
+}
+.nzx-button-info:active > a:only-child,
+.nzx-button-info.active > a:only-child,
+.nzx-button-info:focus > a:only-child,
+.nzx-button-info.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info:active > a:only-child::after,
+.nzx-button-info.active > a:only-child::after,
+.nzx-button-info:focus > a:only-child::after,
+.nzx-button-info.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info[disabled],
+.nzx-button-info[disabled]:hover,
+.nzx-button-info[disabled]:focus,
+.nzx-button-info[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-info[disabled] > a:only-child,
+.nzx-button-info[disabled]:hover > a:only-child,
+.nzx-button-info[disabled]:focus > a:only-child,
+.nzx-button-info[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info[disabled] > a:only-child::after,
+.nzx-button-info[disabled]:hover > a:only-child::after,
+.nzx-button-info[disabled]:focus > a:only-child::after,
+.nzx-button-info[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info:hover,
+.nzx-button-info:active,
+.nzx-button-info.active,
+.nzx-button-info:focus,
+.nzx-button-info.focus {
+  color: #fff;
+}
+.nzx-button-info:focus,
+.nzx-button-info.focus {
+  box-shadow: 0 0 0 2px rgba(13, 202, 240, 0.2);
+}
+.nzx-button-info.ant-btn-text {
+  color: #0dcaf0;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text:hover,
+.nzx-button-info.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-text:hover > a:only-child,
+.nzx-button-info.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text:hover > a:only-child::after,
+.nzx-button-info.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text[disabled],
+.nzx-button-info.ant-btn-text[disabled]:hover,
+.nzx-button-info.ant-btn-text[disabled]:focus,
+.nzx-button-info.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-text[disabled] > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text:hover,
+.nzx-button-info.ant-btn-text:focus {
+  color: #35e2fc;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-info.ant-btn-text:hover > a:only-child,
+.nzx-button-info.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text:hover > a:only-child::after,
+.nzx-button-info.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text:active {
+  color: #00a1c9;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-info.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-text[disabled],
+.nzx-button-info.ant-btn-text[disabled]:hover,
+.nzx-button-info.ant-btn-text[disabled]:focus,
+.nzx-button-info.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-text[disabled] > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-info.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-info.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link {
+  color: #0dcaf0;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link:hover,
+.nzx-button-info.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-link:hover > a:only-child,
+.nzx-button-info.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link:hover > a:only-child::after,
+.nzx-button-info.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link[disabled],
+.nzx-button-info.ant-btn-link[disabled]:hover,
+.nzx-button-info.ant-btn-link[disabled]:focus,
+.nzx-button-info.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-link[disabled] > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link:hover,
+.nzx-button-info.ant-btn-link:focus {
+  color: #35e2fc;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-link:hover > a:only-child,
+.nzx-button-info.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link:hover > a:only-child::after,
+.nzx-button-info.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link:active {
+  color: #00a1c9;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-info.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-info.ant-btn-link[disabled],
+.nzx-button-info.ant-btn-link[disabled]:hover,
+.nzx-button-info.ant-btn-link[disabled]:focus,
+.nzx-button-info.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-info.ant-btn-link[disabled] > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-info.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-info.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-info.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-info {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-info > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-info > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-info:hover,
+.ant-btn-background-ghost.nzx-button-info:focus {
+  color: #35e2fc;
+  border-color: #35e2fc;
+}
+.ant-btn-background-ghost.nzx-button-info:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-info:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-info:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-info:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-info:active {
+  color: #00a1c9;
+  border-color: #00a1c9;
+}
+.ant-btn-background-ghost.nzx-button-info:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-info:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-info[disabled],
+.ant-btn-background-ghost.nzx-button-info[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-info[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-info[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-info[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-info[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-info[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-info[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-info[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-info[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-info[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-info[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray {
+  color: #fff;
+  border-color: #bfbfbf;
+  background: #bfbfbf;
+}
+.nzx-button-gray > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray:hover {
+  color: #ffffff;
+  border-color: #cccccc;
+  background: #cccccc;
+}
+.nzx-button-gray:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray:active,
+.nzx-button-gray.active,
+.nzx-button-gray:focus,
+.nzx-button-gray.focus {
+  color: #f2f2f2;
+  border-color: #b5b5b5;
+  background: #b5b5b5;
+}
+.nzx-button-gray:active > a:only-child,
+.nzx-button-gray.active > a:only-child,
+.nzx-button-gray:focus > a:only-child,
+.nzx-button-gray.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray:active > a:only-child::after,
+.nzx-button-gray.active > a:only-child::after,
+.nzx-button-gray:focus > a:only-child::after,
+.nzx-button-gray.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray[disabled],
+.nzx-button-gray[disabled]:hover,
+.nzx-button-gray[disabled]:focus,
+.nzx-button-gray[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-gray[disabled] > a:only-child,
+.nzx-button-gray[disabled]:hover > a:only-child,
+.nzx-button-gray[disabled]:focus > a:only-child,
+.nzx-button-gray[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray[disabled] > a:only-child::after,
+.nzx-button-gray[disabled]:hover > a:only-child::after,
+.nzx-button-gray[disabled]:focus > a:only-child::after,
+.nzx-button-gray[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray:hover,
+.nzx-button-gray:active,
+.nzx-button-gray.active,
+.nzx-button-gray:focus,
+.nzx-button-gray.focus {
+  color: #fff;
+}
+.nzx-button-gray:focus,
+.nzx-button-gray.focus {
+  box-shadow: 0 0 0 2px rgba(191, 191, 191, 0.2);
+}
+.nzx-button-gray.ant-btn-text {
+  color: #bfbfbf;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text:hover,
+.nzx-button-gray.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-text:hover > a:only-child,
+.nzx-button-gray.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text[disabled],
+.nzx-button-gray.ant-btn-text[disabled]:hover,
+.nzx-button-gray.ant-btn-text[disabled]:focus,
+.nzx-button-gray.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-text[disabled] > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text:hover,
+.nzx-button-gray.ant-btn-text:focus {
+  color: #ccc0c0;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-gray.ant-btn-text:hover > a:only-child,
+.nzx-button-gray.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text:active {
+  color: #999090;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-gray.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-text[disabled],
+.nzx-button-gray.ant-btn-text[disabled]:hover,
+.nzx-button-gray.ant-btn-text[disabled]:focus,
+.nzx-button-gray.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-text[disabled] > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-gray.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-gray.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link {
+  color: #bfbfbf;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link:hover,
+.nzx-button-gray.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-link:hover > a:only-child,
+.nzx-button-gray.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link[disabled],
+.nzx-button-gray.ant-btn-link[disabled]:hover,
+.nzx-button-gray.ant-btn-link[disabled]:focus,
+.nzx-button-gray.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-link[disabled] > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link:hover,
+.nzx-button-gray.ant-btn-link:focus {
+  color: #ccc0c0;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-link:hover > a:only-child,
+.nzx-button-gray.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link:active {
+  color: #999090;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-gray.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-gray.ant-btn-link[disabled],
+.nzx-button-gray.ant-btn-link[disabled]:hover,
+.nzx-button-gray.ant-btn-link[disabled]:focus,
+.nzx-button-gray.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-gray.ant-btn-link[disabled] > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-gray.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-gray.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-gray.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-gray {
+  color: #bfbfbf;
+  border-color: #bfbfbf;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-gray > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-gray > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-gray:hover,
+.ant-btn-background-ghost.nzx-button-gray:focus {
+  color: #ccc0c0;
+  border-color: #ccc0c0;
+}
+.ant-btn-background-ghost.nzx-button-gray:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-gray:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-gray:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-gray:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-gray:active {
+  color: #999090;
+  border-color: #999090;
+}
+.ant-btn-background-ghost.nzx-button-gray:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-gray:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-gray[disabled],
+.ant-btn-background-ghost.nzx-button-gray[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-gray[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-gray[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-gray[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal {
+  color: #fff;
+  border-color: #20c997;
+  background: #20c997;
+}
+.nzx-button-teal > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal:hover {
+  color: #ffffff;
+  border-color: #4dd4ac;
+  background: #4dd4ac;
+}
+.nzx-button-teal:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal:active,
+.nzx-button-teal.active,
+.nzx-button-teal:focus,
+.nzx-button-teal.focus {
+  color: #f2f2f2;
+  border-color: #1ebf8f;
+  background: #1ebf8f;
+}
+.nzx-button-teal:active > a:only-child,
+.nzx-button-teal.active > a:only-child,
+.nzx-button-teal:focus > a:only-child,
+.nzx-button-teal.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal:active > a:only-child::after,
+.nzx-button-teal.active > a:only-child::after,
+.nzx-button-teal:focus > a:only-child::after,
+.nzx-button-teal.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal[disabled],
+.nzx-button-teal[disabled]:hover,
+.nzx-button-teal[disabled]:focus,
+.nzx-button-teal[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-teal[disabled] > a:only-child,
+.nzx-button-teal[disabled]:hover > a:only-child,
+.nzx-button-teal[disabled]:focus > a:only-child,
+.nzx-button-teal[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal[disabled] > a:only-child::after,
+.nzx-button-teal[disabled]:hover > a:only-child::after,
+.nzx-button-teal[disabled]:focus > a:only-child::after,
+.nzx-button-teal[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal:hover,
+.nzx-button-teal:active,
+.nzx-button-teal.active,
+.nzx-button-teal:focus,
+.nzx-button-teal.focus {
+  color: #fff;
+}
+.nzx-button-teal:focus,
+.nzx-button-teal.focus {
+  box-shadow: 0 0 0 2px rgba(32, 201, 151, 0.2);
+}
+.nzx-button-teal.ant-btn-text {
+  color: #20c997;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text:hover,
+.nzx-button-teal.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-text:hover > a:only-child,
+.nzx-button-teal.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text[disabled],
+.nzx-button-teal.ant-btn-text[disabled]:hover,
+.nzx-button-teal.ant-btn-text[disabled]:focus,
+.nzx-button-teal.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-text[disabled] > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text:hover,
+.nzx-button-teal.ant-btn-text:focus {
+  color: #45d6a6;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-teal.ant-btn-text:hover > a:only-child,
+.nzx-button-teal.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text:active {
+  color: #12a37c;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-teal.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-text[disabled],
+.nzx-button-teal.ant-btn-text[disabled]:hover,
+.nzx-button-teal.ant-btn-text[disabled]:focus,
+.nzx-button-teal.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-text[disabled] > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-teal.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-teal.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link {
+  color: #20c997;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link:hover,
+.nzx-button-teal.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-link:hover > a:only-child,
+.nzx-button-teal.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link[disabled],
+.nzx-button-teal.ant-btn-link[disabled]:hover,
+.nzx-button-teal.ant-btn-link[disabled]:focus,
+.nzx-button-teal.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-link[disabled] > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link:hover,
+.nzx-button-teal.ant-btn-link:focus {
+  color: #45d6a6;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-link:hover > a:only-child,
+.nzx-button-teal.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link:active {
+  color: #12a37c;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-teal.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-teal.ant-btn-link[disabled],
+.nzx-button-teal.ant-btn-link[disabled]:hover,
+.nzx-button-teal.ant-btn-link[disabled]:focus,
+.nzx-button-teal.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-teal.ant-btn-link[disabled] > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-teal.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-teal.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-teal.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-teal {
+  color: #20c997;
+  border-color: #20c997;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-teal > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-teal > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-teal:hover,
+.ant-btn-background-ghost.nzx-button-teal:focus {
+  color: #45d6a6;
+  border-color: #45d6a6;
+}
+.ant-btn-background-ghost.nzx-button-teal:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-teal:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-teal:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-teal:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-teal:active {
+  color: #12a37c;
+  border-color: #12a37c;
+}
+.ant-btn-background-ghost.nzx-button-teal:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-teal:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-teal[disabled],
+.ant-btn-background-ghost.nzx-button-teal[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-teal[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-teal[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-teal[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan {
+  color: #fff;
+  border-color: #13c2c2;
+  background: #13c2c2;
+}
+.nzx-button-cyan > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan:hover {
+  color: #ffffff;
+  border-color: #42cece;
+  background: #42cece;
+}
+.nzx-button-cyan:hover > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan:hover > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan:active,
+.nzx-button-cyan.active,
+.nzx-button-cyan:focus,
+.nzx-button-cyan.focus {
+  color: #f2f2f2;
+  border-color: #12b8b8;
+  background: #12b8b8;
+}
+.nzx-button-cyan:active > a:only-child,
+.nzx-button-cyan.active > a:only-child,
+.nzx-button-cyan:focus > a:only-child,
+.nzx-button-cyan.focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan:active > a:only-child::after,
+.nzx-button-cyan.active > a:only-child::after,
+.nzx-button-cyan:focus > a:only-child::after,
+.nzx-button-cyan.focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan[disabled],
+.nzx-button-cyan[disabled]:hover,
+.nzx-button-cyan[disabled]:focus,
+.nzx-button-cyan[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-cyan[disabled] > a:only-child,
+.nzx-button-cyan[disabled]:hover > a:only-child,
+.nzx-button-cyan[disabled]:focus > a:only-child,
+.nzx-button-cyan[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan[disabled] > a:only-child::after,
+.nzx-button-cyan[disabled]:hover > a:only-child::after,
+.nzx-button-cyan[disabled]:focus > a:only-child::after,
+.nzx-button-cyan[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan:hover,
+.nzx-button-cyan:active,
+.nzx-button-cyan.active,
+.nzx-button-cyan:focus,
+.nzx-button-cyan.focus {
+  color: #fff;
+}
+.nzx-button-cyan:focus,
+.nzx-button-cyan.focus {
+  box-shadow: 0 0 0 2px rgba(19, 194, 194, 0.2);
+}
+.nzx-button-cyan.ant-btn-text {
+  color: #13c2c2;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-text > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text:hover,
+.nzx-button-cyan.ant-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-text:hover > a:only-child,
+.nzx-button-cyan.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text[disabled],
+.nzx-button-cyan.ant-btn-text[disabled]:hover,
+.nzx-button-cyan.ant-btn-text[disabled]:focus,
+.nzx-button-cyan.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-text[disabled] > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text:hover,
+.nzx-button-cyan.ant-btn-text:focus {
+  color: #36cfc9;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.nzx-button-cyan.ant-btn-text:hover > a:only-child,
+.nzx-button-cyan.ant-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text:active {
+  color: #08979c;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.nzx-button-cyan.ant-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-text[disabled],
+.nzx-button-cyan.ant-btn-text[disabled]:hover,
+.nzx-button-cyan.ant-btn-text[disabled]:focus,
+.nzx-button-cyan.ant-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-text[disabled] > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:hover > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:focus > a:only-child,
+.nzx-button-cyan.ant-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-text[disabled] > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:focus > a:only-child::after,
+.nzx-button-cyan.ant-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link {
+  color: #13c2c2;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-link > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link:hover,
+.nzx-button-cyan.ant-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-link:hover > a:only-child,
+.nzx-button-cyan.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link[disabled],
+.nzx-button-cyan.ant-btn-link[disabled]:hover,
+.nzx-button-cyan.ant-btn-link[disabled]:focus,
+.nzx-button-cyan.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-link[disabled] > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link:hover,
+.nzx-button-cyan.ant-btn-link:focus {
+  color: #36cfc9;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-link:hover > a:only-child,
+.nzx-button-cyan.ant-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link:active {
+  color: #08979c;
+  border-color: transparent;
+  background: transparent;
+}
+.nzx-button-cyan.ant-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.nzx-button-cyan.ant-btn-link[disabled],
+.nzx-button-cyan.ant-btn-link[disabled]:hover,
+.nzx-button-cyan.ant-btn-link[disabled]:focus,
+.nzx-button-cyan.ant-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.nzx-button-cyan.ant-btn-link[disabled] > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:hover > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:focus > a:only-child,
+.nzx-button-cyan.ant-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.nzx-button-cyan.ant-btn-link[disabled] > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:hover > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:focus > a:only-child::after,
+.nzx-button-cyan.ant-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-cyan {
+  color: #13c2c2;
+  border-color: #13c2c2;
+  text-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-cyan > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-cyan > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-cyan:hover,
+.ant-btn-background-ghost.nzx-button-cyan:focus {
+  color: #36cfc9;
+  border-color: #36cfc9;
+}
+.ant-btn-background-ghost.nzx-button-cyan:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-cyan:focus > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-cyan:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-cyan:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-cyan:active {
+  color: #08979c;
+  border-color: #08979c;
+}
+.ant-btn-background-ghost.nzx-button-cyan:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-cyan:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.ant-btn-background-ghost.nzx-button-cyan[disabled],
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:hover,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:focus,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.ant-btn-background-ghost.nzx-button-cyan[disabled] > a:only-child,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:hover > a:only-child,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:focus > a:only-child,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.ant-btn-background-ghost.nzx-button-cyan[disabled] > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:hover > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:focus > a:only-child::after,
+.ant-btn-background-ghost.nzx-button-cyan[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
 .doc-tip {
   display: inline-block;
   border-radius: 1em;
-  font-size: 11px  !important;
+  font-size: 11px !important;
   line-height: 12px;
   font-weight: 700;
-  background: #E7FDD8;
-  color: #66BF3C;
+  background: #e7fdd8;
+  color: #66bf3c;
   padding: 4px 12px;
-  margin-right: 10px  !important;
+  margin-right: 10px !important;
   vertical-align: top;
 }
 .doc-tip-wrapper {
   font-size: 13px !important;
   line-height: 20px;
-  margin-top: 40px  !important;
-  margin-bottom: 40px  !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
 }
 .doc-tip-wrapper code {
-  font-size: 12px  !important;
+  font-size: 12px !important;
   display: inline-block;
+}
+.doc-label {
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
 }
 
