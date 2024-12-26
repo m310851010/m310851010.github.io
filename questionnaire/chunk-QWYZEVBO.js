@@ -1,1 +1,0 @@
-import"./chunk-ZGPTF7QE.js";var t=[{path:"",pathMatch:"full",redirectTo:"dashboard"},{path:"dashboard",loadComponent:()=>import("./chunk-DU2W2Y26.js")},{path:"**",loadComponent:()=>import("./chunk-OWBNROB7.js").then(o=>o.NotFound404Component)}];export{t as default};
