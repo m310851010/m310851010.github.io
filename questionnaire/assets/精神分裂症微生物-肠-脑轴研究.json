@@ -1,0 +1,2475 @@
+[
+  {
+    "type": "q-h2",
+    "props": {
+      "content": "课题：精神分裂症微生物-肠-脑轴研究",
+      "bottom": 50
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "病 例 报 告 表",
+      "bottom": 30
+    }
+  },
+  {
+    "type": "#baseInfo",
+    "fieldGroup": [
+      {
+        "type": "fill-blank",
+        "value": 20,
+        "props": {
+          "content": "研究中心编号：________"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "key": "受试者编号",
+        "value": 1,
+        "props": {
+          "content": "受试者编号：________"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "key": "受试者姓名",
+        "props": {
+          "key": "受试者姓名",
+          "content": "受试者姓名（拼音缩写）：________"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "key": "填表日期",
+        "props": {
+          "showSeq": false,
+          "content": "填表日期：____年___月___日",
+          "config": {
+            "0": {
+              "isNumber": true,
+              "maxLength": 4
+            },
+            "1": {
+              "isNumber": true
+            },
+            "2": {
+              "isNumber": true
+            }
+          }
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "研究者姓名：________"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "家庭地址：________"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "联系电话：________"
+        }
+      }
+    ]
+  },
+  {
+    "type": "q-h2",
+    "props": {
+      "content": "受试者筛查表（访视0）",
+      "top": "50px"
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "受试者情况调查"
+    }
+  },
+  {
+    "type": "q-title",
+    "props": {
+      "content": "一般资料",
+      "seq": "一"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "姓名 ______爱好_______",
+      "seq": "1"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "性别：□1=男，□2=女",
+      "seq": "2",
+      "config": {
+        "0": {
+          "name": "gender",
+          "value": 1,
+          "multiple": false,
+          "leastOne": false
+        },
+        "1": {
+          "name": "gender",
+          "value": 2
+        }
+      }
+    }
+  },
+  {
+    "type": "fill-blank",
+    "key": "birthday",
+    "props": {
+      "content": "出生日期：____年___月___日",
+      "seq": "3",
+      "config": {
+        "0": {
+          "name": "year",
+          "defaultValue": 2000,
+          "isNumber": true
+        },
+        "1": {
+          "name": "month",
+          "isNumber": true
+        },
+        "2": {
+          "name": "date",
+          "isNumber": true
+        }
+      }
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "民族：□ 1=汉族，□ 2=其他______",
+      "seq": "4",
+      "config": {
+        "0": {
+          "name": "mz",
+          "value": 1,
+          "multiple": false
+        },
+        "1": {
+          "name": "mz",
+          "value": 2
+        },
+        "2": {
+          "name": "other"
+        }
+      }
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "受教育年限：□1=小学6年，□2=初中9年，□3=高中12年，□4=大专15年，□5=本科16年，□6=硕士18年，□7=博士20年；（备注：医学生17年本科毕业仍算16年，只算正规学业教育，职高不算，如初中毕业念护士只算9年）",
+      "seq": "5",
+      "config": {
+        "0": {
+          "name": "edu",
+          "value": 1,
+          "multiple": false
+        },
+        "1": {
+          "name": "edu",
+          "value": 2
+        },
+        "2": {
+          "name": "edu",
+          "value": 3
+        },
+        "3": {
+          "name": "edu",
+          "value": 4
+        },
+        "4": {
+          "name": "edu",
+          "value": 5
+        },
+        "5": {
+          "name": "edu",
+          "value": 6
+        },
+        "6": {
+          "name": "edu",
+          "value": 7
+        }
+      }
+    }
+  },
+  {
+    "type": "fill-blank",
+    "key": "家族史",
+    "props": {
+      "seq": "6",
+      "content": "家族史： <b>A.精神疾病家族史</b>：□ 1=否，□ 2=是<div>（eg1.精神分裂症/2.双相障碍/3.抑郁症…）</div>        若选“2”，描述名称a._______________       <br><span style=\"margin-left: 120px\"></span>b. _______________        <br><b style=\"margin-left: 60px\">B.代谢综合征相关家族史：<b>□1=否，□2=是        <br>（eg1.糖尿病/2.高血压/3.高血脂/4.肥胖…）        <br>若选“2”，描述名称a._______________",
+      "config": {
+        "0": {
+          "name": "edu",
+          "value": 1,
+          "multiple": false
+        },
+        "1": {
+          "name": "edu",
+          "value": 2
+        },
+        "4": {
+          "name": "代谢",
+          "value": 1,
+          "multiple": false
+        },
+        "5": {
+          "name": "代谢",
+          "value": 2
+        }
+      }
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "seq": "7",
+      "content": "既往史：<span style=\" margin-left: 50px\">既往诊断：<span>"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "seq": "22",
+      "content": "首次发病时间：____年___月___日<br>总发病 次 数：___次"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "seq": "23",
+      "content": "是否入院治疗：□ 1=是，□ 2=否；若选“1”，入院次数___次",
+      "config": {
+        "0": {
+          "name": "首次发病时间",
+          "value": 1,
+          "multiple": false
+        },
+        "1": {
+          "name": "首次发病时间",
+          "value": 2
+        },
+        "3": {
+          "name": "入院次数"
+        }
+      }
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "阴性与阳性症状量表（PANSS）"
+    }
+  },
+  {
+    "type": "q-text",
+    "props": {
+      "content": "说明：请<b>圈出</b>相应的分数"
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "question",
+    "props": {
+      "type": "bordered",
+      "header": [
+        {
+          "tr": [
+            {
+              "colspan": 2
+            },
+            {
+              "content": "无",
+              "width": "50px"
+            },
+            {
+              "content": "极<br>轻",
+              "width": "50px",
+              "isHtml": true
+            },
+            {
+              "content": "轻<br>度",
+              "width": "50px",
+              "isHtml": true
+            },
+            {
+              "content": "中<br>度",
+              "width": "50px",
+              "isHtml": true
+            },
+            {
+              "content": "偏<br>重",
+              "width": "50px",
+              "isHtml": true
+            },
+            {
+              "content": "重<br>度",
+              "width": "50px",
+              "isHtml": true
+            },
+            {
+              "content": "极<br>重",
+              "width": "50px",
+              "isHtml": true
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "tr": [
+            {
+              "content": "<b>阳性分量表</b>",
+              "colspan": 9,
+              "isHtml": true
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P1</b>",
+              "isHtml": true
+            },
+            {
+              "content": "妄想"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P2</b>",
+              "isHtml": true
+            },
+            {
+              "content": "概念紊乱",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P3</b>",
+              "isHtml": true
+            },
+            {
+              "content": "幻觉行为",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P4</b>",
+              "isHtml": true
+            },
+            {
+              "content": "兴奋",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P5</b>",
+              "isHtml": true
+            },
+            {
+              "content": "夸大",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P6</b>",
+              "isHtml": true
+            },
+            {
+              "content": "猜疑/被害",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>P7</b>",
+              "isHtml": true
+            },
+            {
+              "content": "敌对性",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>阴性分量表</b>",
+              "colspan": 9,
+              "isHtml": true
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N1</b>",
+              "isHtml": true
+            },
+            {
+              "content": "情感迟钝",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N2</b>",
+              "isHtml": true
+            },
+            {
+              "content": "情绪退缩",
+              "required": true
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N3</b>",
+              "isHtml": true
+            },
+            {
+              "content": "情感交流障碍",
+              "required": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N4</b>",
+              "isHtml": true
+            },
+            {
+              "content": "被动/淡漠",
+              "required": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N5</b>",
+              "isHtml": true
+            },
+            {
+              "content": "抽象思维",
+              "required": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N6</b>",
+              "isHtml": true
+            },
+            {
+              "content": "交流缺乏自发性和流畅性",
+              "required": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "<b>N7</b>",
+              "isHtml": true
+            },
+            {
+              "content": "刻板思维",
+              "required": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 1,
+              "multiple": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 2,
+              "multiple": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 3,
+              "multiple": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 4,
+              "multiple": false,
+              "label": "4"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 5,
+              "multiple": false,
+              "label": "5"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 6,
+              "multiple": false,
+              "label": "6"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "ccc",
+              "value": 7,
+              "multiple": false,
+              "label": "7"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-h5",
+    "props": {
+      "content": "汉密尔顿抑郁评定量表（HAMD-24）",
+      "top": "50px"
+    }
+  },
+  {
+    "type": "q-text",
+    "props": {
+      "content": "说明：请<b>圈出</b>相应的分数"
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "汉密尔顿抑郁评定量表",
+    "props": {
+      "type": "simple",
+      "showTotal": true,
+      "calcField": "score",
+      "header": [
+        {
+          "tr": [
+            {
+              "width": "90px"
+            },
+            {},
+            {
+              "content": "无",
+              "width": "70px",
+              "bold": false
+            },
+            {
+              "content": "极轻",
+              "width": "70px",
+              "bold": false
+            },
+            {
+              "content": "轻度",
+              "width": "70px",
+              "bold": false
+            },
+            {
+              "content": "中度",
+              "width": "70px",
+              "bold": false
+            },
+            {
+              "content": "偏重",
+              "width": "70px",
+              "bold": false
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "tr": [
+            {
+              "content": "1"
+            },
+            {
+              "content": "忧郁情绪"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "2"
+            },
+            {
+              "content": "有罪感"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "3"
+            },
+            {
+              "content": "自杀"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "4"
+            },
+            {
+              "content": "入睡困难"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "5"
+            },
+            {
+              "content": "睡眠不深"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "6"
+            },
+            {
+              "content": "早醒"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "7"
+            },
+            {
+              "content": "工作和兴趣"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "8"
+            },
+            {
+              "content": "迟缓"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "9"
+            },
+            {
+              "content": "激越"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "10"
+            },
+            {
+              "content": "精神性焦虑"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "11"
+            },
+            {
+              "content": "躯体性焦虑"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "12"
+            },
+            {
+              "content": "胃肠道症状"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "13"
+            },
+            {
+              "content": "全身症状"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "14"
+            },
+            {
+              "content": "性症状"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "15"
+            },
+            {
+              "content": "疑病"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 3,
+              "multiple": false,
+              "leastOne": false,
+              "label": "3"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 4,
+              "multiple": false,
+              "leastOne": false,
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "16"
+            },
+            {
+              "content": "体重减轻"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "17"
+            },
+            {
+              "content": "自知力"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "18"
+            },
+            {
+              "content": "日夜 A.早"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "tr": [
+            {},
+            {
+              "content": "变化 B.晚"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 0,
+              "multiple": false,
+              "leastOne": false,
+              "label": "0"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false,
+              "label": "1"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "score",
+              "value": 2,
+              "multiple": false,
+              "leastOne": false,
+              "label": "2"
+            },
+            {},
+            {}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "MCCB expanded battery认知评估",
+      "top": "50px"
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "认知评估",
+    "props": {
+      "showTotal": false,
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "测验",
+              "width": "38%",
+              "align": "center",
+              "background": true
+            },
+            {
+              "content": "粗分",
+              "width": "38%",
+              "align": "center",
+              "colspan": 4,
+              "background": true
+            },
+            {
+              "content": "备注",
+              "align": "center",
+              "background": true
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": "ttttttt",
+          "tr": [
+            {
+              "content": "连线测验（TMTA）"
+            },
+            {
+              "colspan": 4,
+              "content": "_____________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "精神分裂症简易认知评估：符号编码"
+            },
+            {
+              "colspan": 4,
+              "content": "_____________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "霍普金斯词语学习测验修订版（HVLT-R）<b>（表1）</b>",
+              "rowspan": 2
+            },
+            {
+              "content": "T1",
+              "align": "center"
+            },
+            {
+              "content": "T2",
+              "align": "center"
+            },
+            {
+              "content": "T3",
+              "align": "center"
+            },
+            {
+              "content": "总分",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center",
+              "rowspan": 2
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T1",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T2",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T3",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "type": "q-total",
+              "align": "center",
+              "targetField": "3",
+              "calcField": ["T1", "T2", "T3"]
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "韦氏记忆量表-第三版：空间广度"
+            },
+            {
+              "colspan": 4,
+              "content": "_____________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "神经心理评估成套测试：迷宫<br><b>（被试B）</b>"
+            },
+            {
+              "colspan": 4,
+              "content": "_____________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "简易视觉记忆测验—修订版（BVMT-R）<b>（表1）</b>",
+              "rowspan": 2
+            },
+            {
+              "content": "T1",
+              "align": "center"
+            },
+            {
+              "content": "T2",
+              "align": "center"
+            },
+            {
+              "content": "T3",
+              "align": "center"
+            },
+            {
+              "content": "总分",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center",
+              "rowspan": 2
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T1",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T2",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "T3",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "type": "q-total",
+              "align": "center",
+              "targetField": "7",
+              "calcField": ["T1", "T2", "T3"]
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "Mayer-Salovey-Caruso<br>情绪智商测验：情绪管理"
+            },
+            {
+              "colspan": 4,
+              "content": "_____________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "持续操作测验-相同配对",
+              "rowspan": 2
+            },
+            {
+              "content": "2D",
+              "align": "center"
+            },
+            {
+              "content": "3D",
+              "align": "center"
+            },
+            {
+              "content": "4D",
+              "align": "center"
+            },
+            {
+              "content": "平均",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center",
+              "rowspan": 2
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "D2",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "D3",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "config": {
+                "0": {
+                  "key": "D4",
+                  "isNumber": true
+                }
+              },
+              "align": "center"
+            },
+            {
+              "type": "q-total",
+              "align": "center",
+              "targetField": "10",
+              "calcType": "avg",
+              "calcField": ["D2", "D3", "D4"]
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "Stroop色词测验"
+            },
+            {
+              "content": "单词",
+              "align": "center"
+            },
+            {
+              "content": "颜色",
+              "colspan": 2,
+              "align": "center",
+              "width": "20%"
+            },
+            {
+              "content": "色-词",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "________________",
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "colspan": 2,
+              "align": "center"
+            },
+            {
+              "content": "____",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        },
+        {
+          "tr": [
+            {
+              "content": "范畴流利测验"
+            },
+            {
+              "colspan": 2,
+              "content": "________",
+              "align": "center"
+            },
+            {
+              "colspan": 2,
+              "content": "________",
+              "align": "center"
+            },
+            {
+              "content": "__________",
+              "align": "center"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

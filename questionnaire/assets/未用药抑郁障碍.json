@@ -1,0 +1,1786 @@
+[
+  {
+    "type": "q-h2",
+    "props": {
+      "content": "首发/未用药抑郁障碍<br>病例记录表（基线）",
+      "bottom": 50
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "CRF-PMD",
+      "bottom": 130
+    }
+  },
+  {
+    "type": "#baseInfo",
+    "fieldGroup": [
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "患者入组编号：_____________",
+          "config": {
+            "0": {
+              "key": "no"
+            }
+          }
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "患者姓名缩写：_____________",
+          "config": {
+            "0": {
+              "key": "name"
+            }
+          }
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "记录人签名：_____________",
+          "config": {
+            "0": {
+              "key": "record"
+            }
+          }
+        }
+      },
+      {
+        "type": "fill-blank",
+        "props": {
+          "content": "研究开始日期：____年___月___日",
+          "config": {
+            "0": {
+              "isNumber": true,
+              "maxLength": 4,
+              "disabled": true,
+              "key": "year"
+            },
+            "1": {
+              "isNumber": true,
+              "maxLength": 4,
+              "disabled": true,
+              "key": "month"
+            },
+            "2": {
+              "isNumber": true,
+              "maxLength": 4,
+              "disabled": true,
+              "key": "date"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "q-h6",
+    "props": {
+      "content": "按照PMD1001，PMD1002，PMD1003，……依次编号；",
+      "bold": false,
+      "top": 20
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "病例记录表填写说明",
+      "top": 130
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "请使用黑色签字笔填写该病例报告表。",
+      "seq": "1"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "病例报告表填写务必准确、清晰，不得随意涂改。错误之处用一道横线居中划出，重新填入正确数据并签署修改者姓名缩写及修改时间，必要时说明更改理由。任何数据均禁止擦除、涂黑、用修改液或划多道线等。",
+      "seq": "2"
+    }
+  },
+  {
+    "type": "q-text",
+    "props": {
+      "content": "表中有“□”的地方，应根据情况填入数字或在符合项划“×”，有“|__|”者请填入数字，有“______”者，请用文字给予描述。",
+      "seq": "3"
+    },
+    "wrappers": ["q-wrapper"]
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "所有患者都必须在确认入组前签署知情同意书。",
+      "seq": "4"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "单相抑郁按照PMD1001，PMD1002，PMD1003，……依次编号。",
+      "seq": "5",
+      "bold": true
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "患者姓名缩写：每个字汉语拼音的第一个字母，以3位数表示，如李淑朋 LSP；李朋 L-P； 欧阳小秋 OYX。",
+      "seq": "6"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "CRF上的每个空格都须填写。如果某一空格无法填写的话，可以写NA代表不适用，或写ND代表未做，UK代表不知道。",
+      "seq": "7"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "CRF收回后将不允许再做任何修改。",
+      "seq": "8"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "在患者完成研究或因任何原因提前中止时，要填写研究结束表。",
+      "seq": "9"
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "如有任何问题请与课题负责人联系。",
+      "seq": "10",
+      "bottom": 30
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "研究流程"
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "研究流程",
+    "props": {
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "项目"
+            },
+            {
+              "content": "筛选<br>（MINI等）",
+              "isHtml": true
+            },
+            {
+              "content": "知情<br>同意",
+              "isHtml": true
+            },
+            {
+              "content": "一般资料记录<br>（人口统计学）",
+              "isHtml": true
+            },
+            {
+              "content": "病史及家<br>族史",
+              "isHtml": true
+            },
+            {
+              "content": "症状量表<br>评估",
+              "isHtml": true
+            },
+            {
+              "content": "MCCB",
+              "isHtml": true
+            },
+            {
+              "content": "PET/MR",
+              "isHtml": true
+            },
+            {
+              "content": "血样",
+              "isHtml": true
+            },
+            {
+              "content": "粪便样本",
+              "isHtml": true
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "tr": [
+            {
+              "content": "完成情况"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 1
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 2
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 3
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 4
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 5
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 6
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 7
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 8
+            },
+            {
+              "type": "q-checkbox",
+              "name": "完成情况",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "content": "注：已完成项目请打√。"
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "受试者选择（抑郁发作）",
+      "top": 30
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "受试者选择",
+    "props": {
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "入选标准",
+              "colspan": 3
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "以下所有项目的答案都必须为“是”，否则，该受试者不能参加该研究"
+            },
+            {
+              "content": "是"
+            },
+            {
+              "content": "否"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(1) 生物学父母均为汉族；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P1",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P1",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(2) 年龄12~65岁，男女不限"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P2",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(3) 采用MINI诊断量表，符合重性抑郁障碍的临床诊断标准；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P3",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P3",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(4) 24项汉密尔顿抑郁量表（HAMD-24）≥20 分"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P4",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P4",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(5) 右利手"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P5",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P5",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(6) 入组前1月内无明确的呼吸道、泌尿系统、消化系统等的感染史。"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P6",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "P6",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "排除标准",
+              "bold": true,
+              "colspan": 3
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "以下所有项目的答案都必须为“否”，否则，该患者不能参加该研究。"
+            },
+            {
+              "content": "是"
+            },
+            {
+              "content": "否"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(1) 符合DSM-V诊断标准的双相情感障碍、分裂情感性精神障碍、精神分裂症、精神发育迟滞、广泛性发育障碍、谵妄、痴呆、记忆障碍或其他认知障碍者；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S1",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S1",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(2) 物质滥用所致精神障碍(酒、药物等)；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S2",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(3) 有癫痫病史者，高热惊厥者除外；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S3",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S3",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(4) 患有严重的不稳定的躯体疾病者、已确诊的糖尿病、甲状腺疾病、高血压病、心脏病等；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S4",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S4",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(5) 入组前1个月内曾接受过药物治疗（如抗抑郁剂、抗精神病药物、情绪稳定剂等）；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S5",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S5",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(6) 入选前1个月使用过ECT治疗或其它物理治疗者；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S6",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S6",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(7)存在MR绝对禁忌症（体内金属植入物等）；幽闭恐惧症及不能静卧的患者；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S7",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S7",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(8) 妊娠或哺乳期妇女；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S8",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S8",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(9) 目前有严重自杀企图者，或严重兴奋激越者；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S9",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S9",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(10) 有明显的实验室检查结果异常者(AST或ALT≥正常值上限的2倍；BUN≥正常值上限的1.5倍；Cr≥正常值上限的1.2倍)； "
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S10",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S10",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "(11) QTc间期延长(心电图扫描男性QTc≥450毫秒，或女性 QTc≥470毫秒)；"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S11",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S11",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "研究者认为不适合入组的其他情况。",
+              "color": "red"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "SS",
+              "value": 1,
+              "multiple": false
+            },
+            {
+              "type": "q-checkbox",
+              "name": "SS",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "一、M.I.N.I.诊断记录表（详见MINI 成人版）",
+      "top": 30
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "诊断记录表基本信息",
+    "props": {
+      "type": "none",
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "病人姓名：___________________",
+              "config": {
+                "0": {
+                  "key": "病人姓名"
+                }
+              }
+            },
+            {
+              "content": "编号：___________________",
+              "config": {
+                "0": {
+                  "key": "编号"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "评定日期：___________________",
+              "config": {
+                "0": {
+                  "type": "q-date",
+                  "key": "评定日期"
+                }
+              }
+            },
+            {
+              "content": "评定时间：_________________",
+              "config": {
+                "0": {
+                  "type": "q-time",
+                  "key": "评定时间"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "诊断记录表",
+    "props": {
+      "top": 30,
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "题组"
+            },
+            {
+              "content": "时间范围"
+            },
+            {
+              "content": "符合标准"
+            },
+            {
+              "content": "DSM-IV"
+            },
+            {
+              "content": "ICD-10"
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "A 抑郁发作<br>(MAJOR DEPRESSIVE EPISODE)"
+            },
+            {
+              "content": "现患（过去2星期）"
+            },
+            {
+              "content": "□<br>□ ",
+              "config": {
+                "0": {
+                  "name": "S1",
+                  "value": 1,
+                  "multiple": false,
+                  "leastOne": false
+                },
+                "1": {
+                  "name": "S2",
+                  "value": 2,
+                  "multiple": false,
+                  "leastOne": false
+                }
+              }
+            },
+            {
+              "content": "296.20-296.26单次<br>296.30-296.36 复次"
+            },
+            {
+              "content": "F32.x<br>F33.x"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "A' 抑郁发作伴忧郁特征（备选）<br>【MDE WITH MELANCHOLIC FEATURES(optional)】"
+            },
+            {
+              "content": "现患（过去2星期）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S3",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "296.20-296.26单次<br>296.30-296.36 复次 "
+            },
+            {
+              "content": "F32.x<br>F33.x"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "B 心境恶劣（DYSTHYMIA）"
+            },
+            {
+              "content": "现患（过去2年）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S4",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "300.4"
+            },
+            {
+              "content": "F34.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "C 自杀（SUICIDALITY）"
+            },
+            {
+              "content": "现患（过去1个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S5",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {},
+            {}
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "D (轻)躁狂发作<br>【（HYPO）MANIC EPISODE】"
+            },
+            {
+              "content": "现患+既往发作 "
+            },
+            {
+              "content": "□<br>□ ",
+              "config": {
+                "0": {
+                  "name": "S6",
+                  "value": 1,
+                  "multiple": false,
+                  "leastOne": false
+                },
+                "1": {
+                  "name": "S7",
+                  "value": 2,
+                  "multiple": false,
+                  "leastOne": false
+                }
+              }
+            },
+            {
+              "content": "296.00-296.06"
+            },
+            {
+              "content": "F30.x<br>- F31.9"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "E惊恐障碍（PANIC DISORDER）"
+            },
+            {
+              "content": "现患（过去1个月）+终身 "
+            },
+            {
+              "content": "□<br>□ ",
+              "config": {
+                "0": {
+                  "name": "S8",
+                  "value": 1,
+                  "multiple": false,
+                  "leastOne": false
+                },
+                "1": {
+                  "name": "S9",
+                  "value": 2,
+                  "multiple": false,
+                  "leastOne": false
+                }
+              }
+            },
+            {
+              "content": "300.01/300.21 "
+            },
+            {
+              "content": "F40.01<br>-F41.0"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "F场所恐惧症（AGORAPHOBIA） "
+            },
+            {
+              "content": "现患"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S10",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "300.22 "
+            },
+            {
+              "content": "F40.00 "
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "G社交恐惧症（社交焦虑障碍）<br>【SOCIAL PHOBIA(Social Anxiety Disorder)】"
+            },
+            {
+              "content": "现患（过去1个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S11",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "300.23"
+            },
+            {
+              "content": "F40.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "H强迫症（OBSESSIVE-COMPULSIVE DISORDER）"
+            },
+            {
+              "content": "现患（过去1个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S12",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "300.3 "
+            },
+            {
+              "content": "F42.8"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "I创伤后应激障碍（备选）<br>【POSTTRAUMATIC STRESS DISORDER (optional)】"
+            },
+            {
+              "content": "现患（过去1个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S13",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "309.81"
+            },
+            {
+              "content": "F43.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "J酒滥用或酒依赖<br>【ALCOHOL ABUSE AND DEPENDENCE】"
+            },
+            {
+              "content": "现患（过去12个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S14",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "303.9/305.00"
+            },
+            {
+              "content": "F10.2x/F10.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "K非酒精类精神活性物质使用障碍(NON-ALCOHOL PSYCHOACTIVE SUBSTANCE USE DISORDERS)"
+            },
+            {
+              "content": "现患（过去12个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S15",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "304.00-.90/305.20-.90"
+            },
+            {
+              "content": "F11.00-F19.1/ F11.2/F19.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "L精神病性障碍（PSYCHOTIC DISORDER）",
+              "bold": true
+            },
+            {
+              "content": "终身+现患 "
+            },
+            {
+              "content": "□<br>□ ",
+              "config": {
+                "0": {
+                  "name": "S16",
+                  "value": 1,
+                  "multiple": false,
+                  "leastOne": false
+                },
+                "1": {
+                  "name": "S17",
+                  "value": 2,
+                  "multiple": false,
+                  "leastOne": false
+                }
+              }
+            },
+            {
+              "content": "<pre>295.10-295.90/\n297.1//297.3/\n293.81/293.82/\n293.89/298.8/298.9</pre>"
+            },
+            {
+              "content": "F20.xx-F29"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "M神经性厌食（ANOREXIA NERVOSA）"
+            },
+            {
+              "content": "现患（过去3个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S18",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "307.1"
+            },
+            {
+              "content": "F50.0"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "N神经性贪食（BULIMIA NERVOSA）"
+            },
+            {
+              "content": "现患（过去3个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S19",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "307.51"
+            },
+            {
+              "content": "F50.2"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "O广泛性焦虑障碍（GENERALIZED ANXIETY DISORDER）"
+            },
+            {
+              "content": "现患（过去3个月）"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S20",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "300.02"
+            },
+            {
+              "content": "F41.1"
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "P反社会人格障碍（备选） "
+            },
+            {
+              "content": "终身"
+            },
+            {
+              "type": "q-checkbox",
+              "name": "S21",
+              "value": 1,
+              "multiple": false,
+              "leastOne": false
+            },
+            {
+              "content": "301.7"
+            },
+            {
+              "content": "F60.2"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "fill-blank",
+    "props": {
+      "top": 20,
+      "content": "<pre><b>注：</b>\n1.目前仅有A抑郁发作，无D（轻）躁狂发作，诊断为单相抑郁。转至“二、（一）单相抑郁资料收集”\n2.目前存在A抑郁发作，既往有D（轻）躁狂发作，诊断为双相抑郁。转至“二、（二）双相抑郁资料收集”\n3.L精神病性障碍 需标出，并记录于EXCEL表。</pre>"
+    }
+  },
+  {
+    "type": "q-h3",
+    "props": {
+      "content": "二、资料收集",
+      "align": "left"
+    }
+  },
+  {
+    "type": "q-table",
+    "props": {
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "知情同意",
+              "align": "center"
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "签署知情同意书的日期：📅",
+              "config": {
+                "0": {
+                  "key": "知情同意日期"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "人口统计学",
+    "props": {
+      "top": 20,
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "人口统计学",
+              "align": "center"
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "type": "formly-group",
+              "fieldGroup": [
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "性别：□ 1=男 □2=女",
+                    "config": {
+                      "0": {
+                        "name": "性别",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "性别",
+                        "value": 2
+                      }
+                    },
+                    "seq": "1"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "出生日期：📅",
+                    "config": {
+                      "0": {
+                        "key": "birthday"
+                      }
+                    },
+                    "seq": "2"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "婚姻状况: □  1=未婚  □2=有配偶  □3=丧偶 □4=离婚 □5=其他",
+                    "config": {
+                      "0": {
+                        "name": "婚姻状况",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "婚姻状况",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "name": "婚姻状况",
+                        "multiple": false,
+                        "value": 3
+                      },
+                      "3": {
+                        "name": "婚姻状况",
+                        "multiple": false,
+                        "value": 4
+                      },
+                      "4": {
+                        "name": "婚姻状况",
+                        "multiple": false,
+                        "value": 5
+                      }
+                    },
+                    "seq": "3"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "民族： □ 1=汉族  □2=其他     详述_______",
+                    "config": {
+                      "0": {
+                        "name": "民族",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "民族",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "key": "详述"
+                      }
+                    },
+                    "seq": "4"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "籍贯：______(爷爷出生地)",
+                    "config": {
+                      "0": {
+                        "key": "籍贯"
+                      }
+                    },
+                    "seq": "5"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "教育程度：□1=博士 □2=硕士 □3=大学本科 □4=大专 □5=中专及高中 □6=初中 □7=小学 □8=文盲，教育年限_____ ",
+                    "config": {
+                      "0": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 3
+                      },
+                      "3": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 4
+                      },
+                      "4": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 5
+                      },
+                      "5": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 6
+                      },
+                      "6": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 7
+                      },
+                      "7": {
+                        "name": "教育程度",
+                        "multiple": false,
+                        "value": 8
+                      },
+                      "8": {
+                        "key": "教育年限",
+                        "isNumber": true
+                      }
+                    },
+                    "seq": "6"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "居住情况，与其共同生活的人  □ 1＝配偶  □ 2＝其他亲属  □ 3＝独居  □ 4＝其它",
+                    "config": {
+                      "0": {
+                        "name": "居住情况",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "居住情况",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "name": "居住情况",
+                        "multiple": false,
+                        "value": 3
+                      },
+                      "3": {
+                        "name": "居住情况",
+                        "multiple": false,
+                        "value": 4
+                      }
+                    },
+                    "seq": "7"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "是否吸烟：□1=否 □2=是，吸烟___年，平均每天___根（戒烟___年）",
+                    "config": {
+                      "0": {
+                        "name": "是否吸烟",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "是否吸烟",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "key": "吸烟年",
+                        "isNumber": true
+                      },
+                      "3": {
+                        "key": "吸烟根",
+                        "isNumber": true
+                      },
+                      "4": {
+                        "key": "戒烟年",
+                        "isNumber": true
+                      }
+                    },
+                    "seq": "8"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "是否喝酒：□1=否 □2=偶尔 □3=经常，饮酒___年，平均每天喝酒____两",
+                    "config": {
+                      "0": {
+                        "name": "是否喝酒",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "是否喝酒",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "name": "是否喝酒",
+                        "multiple": false,
+                        "value": 3
+                      },
+                      "3": {
+                        "key": "饮酒年",
+                        "isNumber": true
+                      },
+                      "4": {
+                        "key": "饮酒两",
+                        "isNumber": true
+                      }
+                    },
+                    "seq": "9"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "是否有精神疾病家族史：□1=否 □2=是，（注明关系）_________",
+                    "config": {
+                      "0": {
+                        "name": "是否有精神疾病家族史",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "是否有精神疾病家族史",
+                        "multiple": false,
+                        "value": 2
+                      },
+                      "2": {
+                        "key": "关系"
+                      }
+                    },
+                    "seq": "10"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "利手：□1=右 □2=左",
+                    "config": {
+                      "0": {
+                        "name": "利手",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "1": {
+                        "name": "利手",
+                        "multiple": false,
+                        "value": 2
+                      }
+                    },
+                    "seq": "11"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "身高：______cm；体重：______Kg；腰围：______cm；BMI = ______  [体重kg/身高(m)<sup>2</sup>]",
+                    "config": {
+                      "0": {
+                        "key": "身高",
+                        "isNumber": true
+                      },
+                      "1": {
+                        "key": "体重",
+                        "isNumber": true
+                      },
+                      "2": {
+                        "key": "腰围",
+                        "isNumber": true
+                      },
+                      "3": {
+                        "key": "BMI",
+                        "type": "q-total",
+                        "targetField": "人口统计学",
+                        "calcField": ["体重", "身高"],
+                        "calcType": "︴F(args) => {\n                          const { 身高, 体重 } = args;\n                          if (!身高 || !体重) {\n                            return \"\";\n                          }\n                          return (体重 / Math.pow(身高 / 100, 2)).toFixed(2);\n                        }"
+                      }
+                    },
+                    "seq": "12"
+                  }
+                },
+                {
+                  "type": "fill-blank",
+                  "props": {
+                    "content": "患者联系电话：___________________，□ 本人， □ 家人",
+                    "config": {
+                      "0": {
+                        "key": "患者联系电话",
+                        "isNumber": true,
+                        "maxLength": 11
+                      },
+                      "1": {
+                        "name": "患者关系",
+                        "multiple": false,
+                        "value": 1
+                      },
+                      "2": {
+                        "name": "患者关系",
+                        "multiple": false,
+                        "value": 2
+                      }
+                    },
+                    "seq": "13"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "抑郁障碍病史",
+    "props": {
+      "top": 20,
+      "header": [
+        {
+          "tr": [
+            {
+              "content": "抑郁障碍病史",
+              "align": "center"
+            }
+          ]
+        }
+      ],
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "首发时间：📅，首次诊断时间：📅，<br>\n入组时的发作类型 首发：□ 复发：□ 此次发作，是否伴有精神病性症状：□ 1=否；□2=是本次发作病程时间 📅<br>\n抑郁发作次数：_________；是否曾出现轻躁狂/躁狂发作及次数：_________<br>\n是否接受过治疗：□ 1=否；□2=是，（注明药物）_______________________<br>\n总病程：📅<br>\n住院次数（包括本次）：____次",
+              "config": {
+                "0": {
+                  "type": "q-month",
+                  "key": "首发时间"
+                },
+                "1": {
+                  "type": "q-month",
+                  "key": "首次诊断时间"
+                },
+                "2": {
+                  "name": "首发",
+                  "value": true,
+                  "multiple": false
+                },
+                "3": {
+                  "name": "复发",
+                  "value": true,
+                  "multiple": false
+                },
+                "4": {
+                  "name": "是否伴有精神病性症状",
+                  "value": 1,
+                  "multiple": false
+                },
+                "5": {
+                  "name": "是否伴有精神病性症状",
+                  "value": 2,
+                  "multiple": false
+                },
+                "6": {
+                  "type": "q-month",
+                  "key": "病程时间"
+                },
+                "7": {
+                  "isNumber": true,
+                  "key": "发作次数"
+                },
+                "8": {
+                  "isNumber": true,
+                  "key": "躁狂发作次数"
+                },
+                "9": {
+                  "name": "是否接受过治疗",
+                  "value": 1,
+                  "multiple": false
+                },
+                "10": {
+                  "name": "是否接受过治疗",
+                  "value": 2,
+                  "multiple": false
+                },
+                "11": {
+                  "key": "药物"
+                },
+                "12": {
+                  "key": "总病程",
+                  "type": "q-month"
+                },
+                "13": {
+                  "isNumber": true,
+                  "key": "住院次数"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "q-table",
+    "key": "精神障碍家族史",
+    "props": {
+      "top": 20,
+      "body": [
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "精神障碍家族史  是 □   否 □",
+              "bold": true,
+              "align": "center",
+              "config": {
+                "0": {
+                  "name": "是否有精神障碍家族史",
+                  "value": 1,
+                  "multiple": false
+                },
+                "1": {
+                  "name": "是否有精神障碍家族史",
+                  "value": 2,
+                  "multiple": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "key": null,
+          "tr": [
+            {
+              "content": "与患者的亲属关系_______________________<br>\n精神障碍的诊断_________________________确诊时间📅<br>\n可疑精神障碍诊断_____________________病期[📅📅]<br>\n其它说明 ============================================",
+              "config": {
+                "0": {
+                  "key": "与患者的亲属关系"
+                },
+                "1": {
+                  "key": "精神障碍的诊断"
+                },
+                "2": {
+                  "key": "确诊时间",
+                  "type": "q-month"
+                },
+                "3": {
+                  "key": "可疑精神障碍诊断"
+                },
+                "4": {
+                  "key": "病期",
+                  "nzMode": "month"
+                },
+                "5": {
+                  "key": "其它说明"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
